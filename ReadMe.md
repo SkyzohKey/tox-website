@@ -22,4 +22,4 @@ Now you can access it by clicking on http://127.0.0.1:1340. You can change the p
 # License
 This project is under the [MIT License], so feel free to contribute or fork.
 
-[MIT License]: LICENSE
+[MIT License]: License
