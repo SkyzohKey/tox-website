@@ -45,6 +45,17 @@
   }
 }
 
+.btn.iconLeft {
+  span {
+    padding-left: 8px !important;
+  }
+}
+.btn.iconRight {
+  span {
+    padding-right: 8px !important;
+  }
+}
+
 .btn.primary {
   @include btnizer(
     $color-primary,
