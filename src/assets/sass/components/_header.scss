@@ -16,11 +16,11 @@ header#site-header {
   z-index: 100;
 
   #tox-logo {
-    flex: .6;
+    background: transparent url('./images/tox-logo.svg') no-repeat top center;
+    width: 75px;
+    height: 30px;
 
-    // TODO: Add the logo image here.
-    font-size: 24px;
-    font-weight: bold;
+    text-indent: -9999px;
   }
 
   #site-nav {

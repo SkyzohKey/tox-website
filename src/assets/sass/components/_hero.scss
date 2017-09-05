@@ -6,7 +6,7 @@
  */
 
 section#site-hero {
-  @include global-padding(24px, 24px, $menu-padding);
+  @include global-padding(24px, 24px, $hero-padding);
   @include links-color($color-light);
   @include background-dark();
   @include flex-row();
@@ -14,7 +14,7 @@ section#site-hero {
 
 #tox-icon {
   @include size(148px, 180px);
-  background: url(https://cdn.konv.im/images/tox-icon-border.svg) no-repeat top center / cover;
+  background: url('./images/tox-icon.svg') no-repeat top center / cover;
 
   margin-right: 24px;
 }
