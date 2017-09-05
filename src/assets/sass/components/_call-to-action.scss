@@ -28,5 +28,10 @@ nav#tox-features {
 }
 nav#tox-security {
   @extend #tox-features;
-  @include background-dark();
+  @include background-light();
+  @include links-color($color-primary);
+
+  .icon-text:hover {
+    color: $color-light;
+  }
 }

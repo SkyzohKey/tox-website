@@ -6,7 +6,7 @@
  */
 
 header#site-header {
-  @include global-padding();
+  @include global-padding(0, 0, $menu-padding);
   @include links-color($color-light);
   @include background-primary();
   @include flex-row();
