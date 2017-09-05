@@ -26,7 +26,7 @@ gulp.task('html', function () {
 
   gulp.src(folders.src + '/pages/**/*.html')
     //.pipe(replace('<script id="lazy-load"></script>', '<script id="lazy-load">/*' + replacement + '*/</script>'))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest(folders.dist));
 
   gulp.src(folders.dist + '/pages/**/*.html')
