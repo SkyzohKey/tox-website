@@ -1,0 +1,32 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+nav#cta {
+  @include global-padding();
+  @include flex-row();
+
+  height: $callToAction-height;
+
+  background-color: $color-darker;
+}
+
+nav#tox-features {
+  @include global-padding(24);
+  @include flex-row();
+  @include background-primary();
+  @include links-color($color-light);
+
+  height: $features-height;
+
+  .icon-text {
+    @include spacing(16px);
+  }
+}
+nav#tox-security {
+  @extend #tox-features;
+  @include background-dark();
+}

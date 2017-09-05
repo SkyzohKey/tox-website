@@ -1,0 +1,99 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.btn-container {
+  @include flex-row();
+}
+.btn-container.align-left {
+  justify-content: flex-start;
+}
+
+.btn {
+  @include flex-row();
+  @include spacing(8px);
+
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+
+  .material-icons:first-child {
+    margin-right: 8px; 
+  }
+}
+
+@mixin btnizer($bg, $bgHover, $text, $textHover, $borderColor: '') {
+  @include transition();
+  background-color: $bg !important;
+  color: $text !important;
+
+  @if $borderColor != '' {
+    border: 1px solid $text !important;
+  }
+
+  &:hover {
+    background-color: $bgHover !important;
+    color: $textHover !important;
+
+    @if $borderColor != '' {
+      border-color: $bgHover !important;
+    }
+  }
+}
+
+.btn.primary {
+  @include btnizer(
+    $color-primary,
+    white,
+    white,
+    $color-primary
+  );
+}
+.btn.primary.border {
+  @include btnizer(
+    $color-light,
+    $color-primary-hover,
+    $color-primary,
+    $color-light,
+    $color-primary-hover
+  );
+}
+
+.btn.blue {
+  @include btnizer(
+    $color-fb,
+    white,
+    white,
+    $color-fb
+  );
+}
+.btn.blue.border {
+  @include btnizer(
+    $color-light,
+    $color-fb,
+    $color-fb,
+    $color-light,
+    $color-fb
+  );
+}
+
+.btn.blue-light {
+  @include btnizer(
+    $color-twitter,
+    white,
+    white,
+    $color-twitter
+  );
+}
+.btn.blue-light.border {
+  @include btnizer(
+    $color-light,
+    $color-twitter,
+    $color-twitter,
+    $color-light,
+    $color-twitter
+  );
+}

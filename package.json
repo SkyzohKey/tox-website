@@ -1,0 +1,39 @@
+{
+  "name": "tox-website",
+  "version": "1.0.0",
+  "description": "Tox website redesign by SkyzohKey",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "js",
+    "gulp",
+    "seo",
+    "tox",
+    "website"
+  ],
+  "author": "SkyzohKey <skyzohkey@konv.im>",
+  "license": "MIT",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-asset-version": "^0.1.1",
+    "gulp-assets-version-replace": "^2.2.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-live-server": "0.0.30",
+    "gulp-newer": "^1.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-replace-assets": "0.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "pump": "^1.0.2"
+  }
+}

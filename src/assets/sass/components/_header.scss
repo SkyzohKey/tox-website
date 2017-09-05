@@ -1,0 +1,61 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+header#site-header {
+  @include global-padding();
+  @include links-color($color-light);
+  @include background-primary();
+  @include flex-row();
+  @include shadow();
+
+  height: $header-height;
+  z-index: 100;
+
+  #tox-logo {
+    flex: .6;
+
+    // TODO: Add the logo image here.
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #site-nav {
+    @include flex-row();
+
+    height: $header-height;
+    flex: 1;
+    justify-content: flex-end;
+    text-align: right;
+
+    a, div {
+      @include spacing($links-spacing);
+      @include transition();
+
+      display: flex;
+      height: 20px;
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+
+    a:hover, a.active, .dropdown-handle:hover {
+      background-color: $color-primary-hover; // darken($color-primary, .8);
+    }
+
+    .dropdown {
+      display: none;
+    }
+    .dropdown-handle {
+      @include flex-row();
+      cursor: pointer;
+
+      img {
+        @include size(16px, 11px);
+        margin-right: 4px;
+      }
+    }
+  }
+}

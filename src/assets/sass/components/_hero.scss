@@ -1,0 +1,60 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+section#site-hero {
+  @include global-padding(24px, 24px, 20%);
+  @include links-color($color-light);
+  @include background-dark();
+  @include flex-row();
+}
+
+#tox-icon {
+  @include size(148px, 180px);
+  background: url(https://cdn.konv.im/images/tox-icon-border.svg) no-repeat top center / cover;
+
+  margin-right: 24px;
+}
+
+.screenshot {
+  @include size(800px, 500px);
+
+  border-radius: 6px;
+  border: 1px solid $color-gray;
+
+  overflow: hidden;
+}
+.screenshot.left {
+  margin-left: -255px;
+  margin-right: 24px;
+}
+.screenshot.right {
+  margin-right: -255px;
+  margin-left: 24px;
+}
+.text {
+  flex: 1;
+}
+
+section#introduction {
+  @include right-padding(24px);
+  @include links-color($color-primary);
+  @include background-light();
+  @include flex-row();
+}
+
+section#secure {
+  @include left-padding(24px);
+  @include links-color($color-primary);
+  @include background-dark();
+  @include flex-row();
+}
+
+section {
+  p {
+    line-height: 26px;
+  }
+}

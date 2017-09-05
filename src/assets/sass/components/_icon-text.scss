@@ -1,0 +1,26 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.icon-text {
+  @include flex-column();
+  @include transition();
+
+  padding: 16px;
+  border-radius: 5px;
+
+  span.material-icons {
+    margin-bottom: 16px;
+    font-weight: normal;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}

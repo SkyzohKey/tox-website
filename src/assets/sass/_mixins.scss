@@ -1,0 +1,124 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+@import "variables";
+
+/**
+ * A simple helper to define containers padding.
+ * For margins use `global-margin`.
+ * All params can be left blank.
+ *
+ * @param $top - The padding-top value. Default: $container-padding-default.
+ * @param $botton - The padding-bottom value. Default: $container-padding-default.
+ * @param $override - The override value for left/right paddings. Default: $global-padding.
+ */
+@mixin global-padding($top: $container-padding-default, $bottom: $top, $override: $global-padding) {
+  padding-left: $override;
+  padding-right: $override;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin right-padding($top: $container-padding-default, $bottom: $top, $override: $global-padding) {
+  padding-left: 0;
+  padding-right: $override;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin left-padding($top: $container-padding-default, $bottom: $top, $override: $global-padding) {
+  padding-left: $override;
+  padding-right: 0;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+/**
+ * A simple helper to define containers margin.
+ * For paddings use `global-padding`.
+ * All params can be left blank.
+ *
+ * @param $top - The margin-top value. Default: $container-margin-default.
+ * @param $botton - The margin-bottom value. Default: $container-margin-default.
+ * @param $override - The override value for left/right margins. Default: $global-margin.
+ */
+@mixin global-margin($top: $container-margin-default, $bottom: $top, $override: $global-margin) {
+  margin-left: $override;
+  margin-right: $override;
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin size($width: 0px, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin links-color($color, $hover-color: $color) {
+  a {
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+@mixin headers-color($color) {
+  h1, h2, h3, h4, h5, h6 {
+    color: $color;
+  }
+}
+
+@mixin background-primary() {
+  @include headers-color($color-light);
+  background-color: $color-primary;
+  color: $color-light;
+}
+
+@mixin background-dark() {
+  @include headers-color($color-primary-light);
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+@mixin background-light() {
+  @include headers-color($color-primary-light);
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+@mixin shadow() {
+  box-shadow: 0 $shadow-y $shadow-blur $color-shadow;
+}
+
+@mixin flex-row() {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin spacing($space-size) {
+  margin-right: $space-size;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin transition() {
+  transition: all 250ms linear;
+}

@@ -1,0 +1,41 @@
+/**
+ * Copyright (c) 2017 skyzohkey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+// Colors.
+$color-primary: #009688;
+$color-primary-hover: #3fb0a5;
+$color-primary-light: #80cbc4;
+
+$color-dark: #414141;
+$color-darker: #333333;
+$color-light: #FFFFFF;
+$color-gray: #f6f6f6;
+
+$color-fb: #3b5998;
+$color-twitter: #1DA1F2;
+$color-medium: lightgreen;
+
+$color-shadow: rgba(0,0,0,.65);
+
+// Fonts.
+
+// Sizes.
+$header-height: 60px;
+$callToAction-height: 50px;
+$features-height: 150px;
+
+$shadow-y: 2px;
+$shadow-blur: 6px;
+
+// Paddings, margins.
+$global-padding: 10%;
+$global-margin: $global-padding;
+
+$container-padding-default: 0;
+$container-margin-default: 0;
+
+$links-spacing: 16px;
