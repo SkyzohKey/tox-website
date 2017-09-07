@@ -127,3 +127,21 @@
     $color-google-plus
   );
 }
+
+.btn.green {
+  @include btnizer(
+    $color-medium,
+    $color-light,
+    $color-light,
+    $color-medium
+  );
+}
+.btn.green.border {
+  @include btnizer(
+    $color-light,
+    $color-medium,
+    $color-medium,
+    $color-light,
+    $color-medium
+  );
+}
