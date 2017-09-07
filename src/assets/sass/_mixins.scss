@@ -155,7 +155,7 @@
 }
 
 @mixin background-gradient-primary() {
-  @include headers-color($color-accent-light);
+  @include headers-color($color-light);
 
   background: $color-primary; // For older browsers.
   background: linear-gradient(45deg, $color-primary, $color-accent);
