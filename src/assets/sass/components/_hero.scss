@@ -38,7 +38,7 @@ section#site-hero {
   flex: 1;
 }
 
-section#introduction {
+section#introduction, section {
   @include global-padding(36px, 36px, 5%);
   @include links-color($color-primary);
   @include background-light();
@@ -48,6 +48,18 @@ section#introduction {
     margin-right: 24px;
     color: $color-primary;
   }
+}
+section.primary-theme {
+  @include background-primary();
+}
+section.dark-theme {
+  @include background-dark();
+}
+section.light-theme {
+  @include background-light();
+}
+section.primary-gradient-theme {
+  @include background-gradient-primary();
 }
 
 section#secure {

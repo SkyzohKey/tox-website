@@ -155,9 +155,16 @@
 }
 
 @mixin background-gradient-primary() {
+  @include headers-color($color-accent-light);
+
   background: $color-primary; // For older browsers.
   background: linear-gradient(45deg, $color-primary, $color-accent);
   color: $color-light;
+
+  .icon-line span.mdi, .icon-line span.material-icons {
+    color: $color-light !important;
+    border-color: $color-light !important;
+  }
 }
 
 @mixin background-gradient-dark() {

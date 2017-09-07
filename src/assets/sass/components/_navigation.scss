@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) 2017 SkyzohKey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+#features-nav {
+  @include global-padding(8px, 8px, 10%);
+  @include flex-row();
+  @include links-color($color-dark, $color-primary);
+
+  height: 40px;
+
+  background-color: $color-gray;
+  border-bottom: 1px solid darken($color-gray, 10%);
+
+  a {
+    @include spacing(28px);
+    @include transition();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span.material-icons {
+      padding-right: 8px;
+    }
+  }
+}

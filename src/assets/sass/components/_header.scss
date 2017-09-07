@@ -10,7 +10,7 @@ header#site-header {
   @include links-color($color-light);
   @include background-gradient-primary();
   @include flex-row();
-  @include shadow-3();
+  @include shadow-1();
 
   height: $header-height;
   z-index: 100;
