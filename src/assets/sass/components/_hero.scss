@@ -24,8 +24,8 @@ section#site-hero {
   @include shadow-2();
 
   border-radius: 6px;
-  //border: 1px solid $color-gray;
-
+  user-select: none;
+  pointer-events: none;
   overflow: hidden;
 }
 .screenshot.left {
