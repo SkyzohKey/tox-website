@@ -43,6 +43,11 @@ section#introduction {
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
+
+  .sharer {
+    margin-right: 24px;
+    color: $color-primary;
+  }
 }
 
 section#secure {

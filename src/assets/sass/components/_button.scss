@@ -77,8 +77,8 @@
 .btn.blue {
   @include btnizer(
     $color-fb,
-    white,
-    white,
+    $color-light,
+    $color-light,
     $color-fb
   );
 }
@@ -95,8 +95,8 @@
 .btn.blue-light {
   @include btnizer(
     $color-twitter,
-    white,
-    white,
+    $color-light,
+    $color-light,
     $color-twitter
   );
 }
@@ -107,5 +107,23 @@
     $color-twitter,
     $color-light,
     $color-twitter
+  );
+}
+
+.btn.red {
+  @include btnizer(
+    $color-google-plus,
+    $color-light,
+    $color-light,
+    $color-google-plus
+  );
+}
+.btn.red.border {
+  @include btnizer(
+    $color-light,
+    $color-google-plus,
+    $color-google-plus,
+    $color-light,
+    $color-google-plus
   );
 }
