@@ -9,5 +9,6 @@ script:
 addons:
   browserstack:
     username: SkyzohKey
-    acess_key:
-      secure: mYw0GWbvsfKkAOMv4a+sji+i8w7MJSs0FjMLeu1V93nz1YLPWmlLAEEhRVH7PI5gayWTOAxAOAxdUV03Zu0bF5P3V9AR3t8l1lHWbwiBoWryv37fK2QaHDCCptAhrkEVaMA5mSvfI4F67/DexXOWMrvMLp8Q0BEJeWiSaTKKQZk9YyXWzBLHgPrBFB3dr8ZVK72xM9e77+iZACcaOaf0xszIQUhxheQ1Bsi78AaZXrm+pAVg/uCjn+l7+190YQ4Yk3//wMca+N4IOFLFRF5Uz/uV8BZJtBMyp/g4XB63hLHvg2qHGwcv4xg9yZNKdDZEgr3jmi79akPuSbLBgdZMVoy2t61V/uBvS12GYoqyJnPjkwEHBAXyq1NC+ath3oNBMiSuhGsm0BU5ZQi9kuc9FKvHpsI6oDisz2XD75mCWG9zBA6QABFowOngBPw8E3+H0wNfGlw1AHZ+MkLWkzxBFjDnFoXkKR74q5B4hqRxK/uMEc+lQkLTMtkgRVrMsFmdgVNnqoqsasUup3tIzhm8r5Xde6FWdD5R1cnKKqyUIRrpIMXWrcTeIXX/0vZxuXOZHdJ9m1Y3+A08wj4QCEu/HdEzPGJLmXInmjmmdKCGCtI0gPqO85OaZz/dHW8rS6ewizUtnLGJHi/X+Y/nE5f/0mUQ+hHqUiXiI5xcYiRCFLE=
+    access_key:
+      secure: $BROWSERSTACK_ACCESS_KEY
+
