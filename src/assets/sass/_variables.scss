@@ -6,9 +6,9 @@
  */
 
 // Colors.
-$color-primary: #009688;
-$color-primary-hover: #3fb0a5;
-$color-primary-light: #80cbc4;
+$color-primary: #3F51B5;
+$color-primary-hover: lighten($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 20%);
 
 $color-dark: #414141;
 $color-darker: #333333;
