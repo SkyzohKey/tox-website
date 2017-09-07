@@ -39,7 +39,7 @@ section#site-hero {
 }
 
 section#introduction {
-  @include global-padding(24px, 24px, 5%);
+  @include global-padding(36px, 36px, 5%);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
@@ -51,7 +51,7 @@ section#introduction {
 }
 
 section#secure {
-  @include global-padding(24px, 24px, 5%);
+  @include global-padding(36px, 36px, 5%);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();

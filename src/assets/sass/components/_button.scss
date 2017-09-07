@@ -61,7 +61,7 @@
     $color-primary,
     white,
     white,
-    $color-primary
+    $color-accent
   );
 
   @include background-gradient-primary();

@@ -31,8 +31,10 @@ nav#tox-security {
   @include links-color($color-primary);
   background: none;
   @include background-light();
+  @include transition();
 
   .icon-text:hover {
+    @include shadow-1();
     color: $color-accent;
   }
 }

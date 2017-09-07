@@ -84,7 +84,7 @@
 }
 
 @mixin background-dark() {
-  @include headers-color($color-accent-light);
+  @include headers-color($color-primary-light);
   background-color: $color-dark;
   color: $color-light;
 }
