@@ -29,7 +29,7 @@ Now you can access it by clicking on http://127.0.0.1:1340. You can change the p
   <img src="https://a.doko.moe/cxkvnr.svg" height="26">
 </a>
 
-We are proudly powered by **BrowserStack** who is offering us an Open Source plan to test and debug the new Tox website. It's awesome and I'd personally like to thanks them for this!
+We are proudly powered by **BrowserStack**, they offer us a Sponsored account to test and debug the new Tox website. It's awesome and I'd personally like to thanks them for this!
 
 # License
 This project is under the [MIT License], so feel free to contribute or fork.
