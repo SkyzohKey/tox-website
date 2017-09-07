@@ -20,19 +20,18 @@ section#site-hero {
 }
 
 .screenshot {
-  @include size(800px, 500px);
+  @include size(560px, 350px);
+  @include shadow-2();
 
   border-radius: 6px;
-  border: 1px solid $color-gray;
+  //border: 1px solid $color-gray;
 
   overflow: hidden;
 }
 .screenshot.left {
-  margin-left: -255px;
   margin-right: 24px;
 }
 .screenshot.right {
-  margin-right: -255px;
   margin-left: 24px;
 }
 .text {
@@ -40,14 +39,14 @@ section#site-hero {
 }
 
 section#introduction {
-  @include right-padding(24px);
+  @include global-padding(24px, 24px, 5%);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
 }
 
 section#secure {
-  @include left-padding(24px);
+  @include global-padding(24px, 24px, 5%);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
