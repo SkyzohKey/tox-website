@@ -103,4 +103,4 @@ gulp.task('serve', function () {
   server.start();
 });
 
-gulp.task('default', [ 'sass', 'scripts', 'fonts', 'res', 'images', 'html', 'watch', 'serve' ]);
+gulp.task('default', [ 'sass', 'scripts', 'fonts', 'res', 'images', 'html' ]);
