@@ -15,16 +15,28 @@ const imagemin  = require('gulp-imagemin');
 const prefixCSS = require('gulp-autoprefixer');
 const htmlmin   = require('gulp-htmlmin');
 const assetsVer = require('gulp-asset-version');
+const _if       = require('gulp-if');
+const minimist  = require('minimist');
+
+const DOMAIN = "https://skyzohkey.github.io/tox-website/";
 
 const folders = {
   src: './src',
   dist: './dist'
 };
 
+var knownOptions = {
+  string: 'env',
+  default: { env: process.env.NODE_ENV || 'production' }
+};
+
+var options = minimist(process.argv.slice(2), knownOptions);
+
 gulp.task('html', function () {
   //var replacement = fs.readFileSync(folders.dist + '/dist.min.js', 'utf8').toString();
 
   gulp.src(folders.src + '/pages/**/*.html')
+    .pipe(_if(opts.env == 'production', replace('<base href="">', '<base href="' + DOMAIN + '">')))
     //.pipe(replace('<script id="lazy-load"></script>', '<script id="lazy-load">/*' + replacement + '*/</script>'))
     .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest(folders.dist));

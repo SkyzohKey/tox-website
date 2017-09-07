@@ -8,7 +8,7 @@ before_script:
 - npm install -g gulp-cli
 - npm install
 script:
-- gulp
+- gulp --env production
 addons:
   browserstack:
     username: SkyzohKey
