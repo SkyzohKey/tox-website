@@ -1,5 +1,7 @@
 # Tox Website
 
+[![Build Status](https://travis-ci.org/SkyzohKey/tox-website.svg?branch=master)](https://travis-ci.org/SkyzohKey/tox-website)
+
 I decided to make a new website for Tox because the current one is weird and not userfriendly.  
 Also, the audience we target is not tech-savvy so the website must be clear and not redundant.
 
