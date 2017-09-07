@@ -72,6 +72,8 @@
 @mixin headers-color($color) {
   h1, h2, h3, h4, h5, h6 {
     color: $color;
+    font-family: 'Maven Pro';
+    font-weight: 500;
   }
 }
 
