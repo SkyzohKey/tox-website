@@ -157,4 +157,11 @@
 @mixin background-gradient-primary() {
   background: $color-primary; // For older browsers.
   background: linear-gradient(45deg, $color-primary, $color-accent);
+  color: $color-light;
+}
+
+@mixin background-gradient-dark() {
+  background: $color-dark; // For older browsers.
+  background: linear-gradient(45deg, $color-dark, $color-darker);
+  color: $color-light;
 }
