@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "5"
+- '5'
 cache:
   directories:
   - node_modules
@@ -13,11 +13,14 @@ addons:
   browserstack:
     username: SkyzohKey
     access_key:
-      secure: $BROWSERSTACK_ACCESS_KEY # Set in travis-ci.org dashboard
+      secure: "$BROWSERSTACK_ACCESS_KEY"
 deploy:
   provider: pages
   local_dir: dist/
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  github_token: "$GITHUB_TOKEN"
   on:
     branch: master
+env:
+  global:
+    secure: aNRpCfg0cc7sKVqsO0K2lFjvTXrYE1k7zY7er6fhuclRpaF6LMyL86xzxA5wR/6LIdMnozdMJole9sbx20IQ5VeNM9QM0akKxclxlr/kY4Ma8J2zJ6/w9wVTTeWaRSBnNMYSJFpHOYYp8kim5ZxaQq9Nj8FRKz55smGmsfqPG9Ijza47Pxfn//JBsA46hYkkoLIq/sdfjKuOQynG2geqSs7A2U2wZdTShw1ftL7wBe8RYtLjzj07mwG8ZqqRgJBiM/SsD9PTPjrEP8TTpaRIFNDN+yghvui68X5fFtwxrSBf1sVaZ7ZfyXC/xo0YZ/iJwPaNVhS+x1Wc6WNLqO+Lu3n4tFrRTPRGYh2pBJukdUskED9XcZ6FdtoRnHgWRR+wv2Z3fLbwZhRHsQGqrxibaHV7j9FGv6CibYULnVCGlgKMglD1avf9aJnyOGmBwx9vU/QphPHFEEjKCAatnYcvHBKStC3VXd2d0dDp2f2c4yqy+H7gZ0zV97rvwrIypTdDI+ydUXCk6nv9SgMrS47hBHIp7tqFbe1EbZmE5TC/f2ups2TTlaRhjDxYwCYGgDLD8hcn4EQEgIsmuBNey7txMKFD9Zf1R4ptgb49WN0TF+0MwW8beCAF4UTjvU3lekcK88t4QQi8S8vw5uZJxAyrHb7SU5Iky1DUApDk/xbowEc=
