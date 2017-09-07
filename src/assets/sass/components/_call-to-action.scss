@@ -15,7 +15,7 @@ nav#cta {
 }
 
 nav#tox-features {
-  @include global-padding(24);
+  @include global-padding(0, 0, 10%);
   @include flex-row();
   @include background-primary();
   @include links-color($color-light);
