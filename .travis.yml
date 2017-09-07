@@ -1,0 +1,12 @@
+cache:
+  directories:
+    - "node_modules"
+before_script:
+  - npm install
+script:
+  - gulp
+addons:
+  browserstack:
+    username: "SkyzohKey"
+    acess_key:
+      secure: "0UZRsCNhXWOgJZzsT319EKX7Oc092itYQ2ALnOhl1TyMBGtjS5X3E7grePgLa4jD/XZYWTHJEGLQZE8RCHRhw7PAaS3LqqIZ1275xpM/BMknXwRp0xB1fKNZWk30Lxa4ndPfTRgq6JMhLlBKqxa8fxWfw1CxnGQxAm1GrrpiB+tRGYATaAnJs9qRvLCrqBnT8AGntbn8NvpyHPNJ2V7Hfxq3wVGJD8RTh7Ojs0Pkg/gSp34JaUPA9MiCNINAMhtpYCvIw2yuvltLxX/k5XzG6LlQH8hVWaLHhXWe0sNI0KR/lQybNcZ5BwSvOM3nbo+6biyP3eXM1jvC5z6RuwWFziqbCv3ojL3tLzihbVZF+jE6MUTSluc/4J+LYzolBAoR5rq1ri0QCB8xe6h/y2AHnNEh88mFilLu6GkFWGl2fFEu5Im7dFFBMEYXqO3V0wpuRhGWcS+yq+JQfxDAxlMpsi7Kh+6lHpBPg3I89tw6euo2U0muP2tOXmf6v63XPDSIwBWNZ1esrf041ZAfTr1UwX9I2mAk5NPY6lQuNqHl/mFaExbkJBE9tycUPrU9zsGzJJ5KSOoGcVM7r1xUGloojFv3/kLjlwxXCwUMAQQJoJ34bojuv1MScdGS1+9bmv4haB1WNXB12/w/qyDzXau66RSdEM+7VhFY68ce9HXUvG8="
