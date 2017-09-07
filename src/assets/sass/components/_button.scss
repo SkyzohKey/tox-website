@@ -28,7 +28,7 @@
 
 @mixin btnizer($bg, $bgHover, $text, $textHover, $borderColor: '') {
   @include transition();
-  background-color: $bg !important;
+  background: $bg !important;
   color: $text !important;
 
   @if $borderColor != '' {
@@ -36,7 +36,7 @@
   }
 
   &:hover {
-    background-color: $bgHover !important;
+    background: $bgHover !important;
     color: $textHover !important;
 
     @if $borderColor != '' {
@@ -63,6 +63,8 @@
     white,
     $color-primary
   );
+
+  @include background-gradient-primary();
 }
 .btn.primary.border {
   @include btnizer(

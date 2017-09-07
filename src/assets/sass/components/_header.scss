@@ -8,7 +8,7 @@
 header#site-header {
   @include global-padding(0, 0, $menu-padding);
   @include links-color($color-light);
-  @include background-primary();
+  @include background-gradient-primary();
   @include flex-row();
   @include shadow-3();
 
@@ -36,13 +36,17 @@ header#site-header {
       @include transition();
 
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 20px;
       padding: 4px 8px;
       border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 12px;
     }
 
     a:hover, a.active, .dropdown-handle:hover {
-      background-color: $color-primary-hover; // darken($color-primary, .8);
+      background-color: rgba(255,255,255,.1);
     }
 
     .dropdown {
@@ -51,6 +55,7 @@ header#site-header {
     .dropdown-handle {
       @include flex-row();
       cursor: pointer;
+      color: $color-light;
 
       img {
         @include size(16px, 11px);

@@ -17,7 +17,7 @@ nav#cta {
 nav#tox-features {
   @include global-padding(0, 0, 10%);
   @include flex-row();
-  @include background-primary();
+  @include background-gradient-primary();
   @include links-color($color-light);
 
   height: $features-height;
@@ -28,10 +28,11 @@ nav#tox-features {
 }
 nav#tox-security {
   @extend #tox-features;
-  @include background-light();
   @include links-color($color-primary);
+  background: none;
+  @include background-light();
 
   .icon-text:hover {
-    color: $color-light;
+    color: $color-accent;
   }
 }

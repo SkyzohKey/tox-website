@@ -35,7 +35,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src([folders.src + '/assets/sass/**.scss', folders.src + '/assets/sass/**/**.scss'])
+  gulp.src([folders.src + '/assets/sass/**.scss', folders.src + '/assets/sass/**/*.scss'])
       .pipe(sass().on('error', sass.logError))
       .pipe(prefixCSS())
       .pipe(cleanCSS())
@@ -78,7 +78,7 @@ gulp.task('images', function () {
 
 gulp.task('watch', function () {
   gulp.watch(folders.src + '/pages/**/*.html', [ 'html' ]);
-  gulp.watch([folders.src + '/assets/sass/**.scss', folders.src + '/assets/sass/**/**.scss'], [ 'sass' ]);
+  gulp.watch([folders.src + '/assets/sass/**.scss', folders.src + '/assets/sass/**/*.scss'], [ 'sass' ]);
   gulp.watch(folders.src + '/assets/fonts/**', [ 'fonts' ]);
   gulp.watch(folders.src + '/assets/images/**', [ 'images' ]);
   gulp.watch(folders.src + '/assets/scripts/**', [ 'scripts' ]);

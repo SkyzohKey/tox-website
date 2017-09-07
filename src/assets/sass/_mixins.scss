@@ -84,7 +84,7 @@
 }
 
 @mixin background-dark() {
-  @include headers-color($color-primary-light);
+  @include headers-color($color-accent-light);
   background-color: $color-dark;
   color: $color-light;
 }
@@ -140,4 +140,21 @@
 }
 @mixin shadow-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
+/// and the `-webkit-` prefixed declaration
+/// @access public
+/// @param {Keyword | Angle} $direction - Linear gradient direction
+/// @param {Arglist} $color-stops - List of color-stops composing the gradient
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin background-gradient-primary() {
+  background: $color-primary; // For older browsers.
+  background: linear-gradient(45deg, $color-primary, $color-accent);
 }
