@@ -16,9 +16,10 @@ header#site-header {
   z-index: 100;
 
   #tox-logo {
-    background: transparent url('./images/tox-logo.svg') no-repeat top center;
+    background: transparent url('./images/tox-logo.svg') no-repeat center left;
     width: 75px;
     height: 30px;
+    padding: 15px;
 
     text-indent: -9999px;
   }
