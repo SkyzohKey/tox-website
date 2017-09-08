@@ -29,7 +29,7 @@
 @mixin btnizer($bg, $bgHover, $text, $textHover, $borderColor: '') {
   @include transition();
   background: $bg;
-  color: $text;
+  color: $text !important;
 
   @if $borderColor != '' {
     border: 1px solid $text !important;
