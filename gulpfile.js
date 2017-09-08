@@ -27,7 +27,7 @@ const folders = {
 
 var knownOptions = {
   string: 'env',
-  default: { env: process.env.NODE_ENV || 'production' }
+  default: { env: process.env.NODE_ENV || 'dev' }
 };
 var args = minimist(process.argv.slice(2), knownOptions);
 
