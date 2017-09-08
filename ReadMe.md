@@ -15,10 +15,16 @@ It uses AdonisJS for the back-end. Sass is used for the front-end styling.
 This use Gulp as a build tool so you need to run the following:
 
 ```
+# Clone the repo and install dependencies
 git clone https://github.com/SkyzohKey/tox-website.git
 cd tox-website
 npm install
+
+# Compile everything into a dist/ folder (`--env production` in prod)
 gulp
+
+# Serve the app !
+gulp watch serve
 ```
 
 Now you can access it by clicking on http://127.0.0.1:1340. You can change the port by passing a `PORT`env variable.
