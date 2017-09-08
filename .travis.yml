@@ -2,10 +2,6 @@ language: node_js
 node_js:
 - '5'
 
-env:
-  global:
-  - secure: FIMgla7b2UIrv7u7UXpo9N1S5nesRPVSABtLn3Gw6bLxntGFlYKzVq4ZXD2ptJcM78wK+tsq8iJOOdaKYq2PXWiv0hBR5ac4dRRzbYl6p2/xdkWYNK9B1Zt8WKOQvHHAhNCaBhTxafNgiUINn6zfufNBpMrVlcQf/WkCUutxVblztJTJ8o/V7A6Ou5B4L+rJGlV85v5MYOy70sODXWTsyTAimUZUXFLtyeVgrDi+XNMQkhgYsX1dp2asYTV9Ayc5ZW0x3MPLv5TcHPaK2wBTWlr0Xb1M587WaBU4ZcPtlBB55T+gYvWvYym0k0insOxMMef3GJUHkKXc77kwmN6Rhldp7YR/D7ihQn+iQM38u6iwfmVm8dfjdkm0xzgttaum+Nq+JsgMrEFUSELu60wUz4KY8Sf9OpAsLD7Q4rIWzgWcUZ8u3nQCWSQDIeDDVmz/9Jki3m2HIB3Y+ZZKIT8du+QHLyfKMSTDVhtdSYJY5CZ09ym53qFUp57spMKVopqBJ9Z7zTJmgng+d1OEbYTxirVcdtidlW90gZfzG/ZRp/BlM/1+ExaJTX0uBwhgIIEyZf/fQXahjm/bUFrygzAE5Apjt9rJaUrSOMmNSLKJYK2dYWL52yEZDC6L1A/FX8AV0oq9Xepf3kFOisOXaQW+J8bzqnnvS5QoksjUtDpAg+U=
-
 cache:
   directories:
   - node_modules
