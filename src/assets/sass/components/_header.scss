@@ -43,3 +43,12 @@ header.page-title {
 
   //min-height: 150px;
 }
+header.no-bg {
+  @include global-padding(8px);
+
+  background: none;
+}
+header.color-primary h1 {
+  text-align: left;
+  color: $color-primary !important;
+}

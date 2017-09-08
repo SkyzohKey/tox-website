@@ -1,0 +1,44 @@
+/**
+ * Copyright (c) 2017 SkyzohKey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.collapse-title {
+  display: flex;
+  margin: 8px 0;
+
+  transition: all .3s ease-in-out;
+  font-size: 22px;
+  
+  z-index: 9999;
+  
+  .mdi-plus-box {
+    display: block;
+    margin-right: 8px;
+  }
+  .mdi-minus-box {
+    display: none;
+    margin-right: 8px;
+  }
+}
+.collapse-title.active {
+  .mdi-minus-box {
+    display: block;
+  }
+  .mdi-plus-box {
+    display: none;
+  }
+}
+.collapse-title:hover,
+.collapse-title:focus {
+  color: $color-accent;
+  outline: none;
+}
+
+.collapse-content {
+  //max-height: 0;
+  display: block;
+  margin-bottom: 32px !important;
+}

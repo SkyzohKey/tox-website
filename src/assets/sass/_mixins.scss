@@ -79,6 +79,8 @@
 
 @mixin background-primary() {
   @include headers-color($color-light);
+  @include links-color($color-primary, $color-accent-light);
+
   background-color: $color-primary;
   color: $color-light;
 }
