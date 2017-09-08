@@ -26,6 +26,7 @@ nav#tox-features {
     @include spacing(16px);
   }
 }
+
 nav#tox-security {
   @extend #tox-features;
   @include links-color($color-primary);

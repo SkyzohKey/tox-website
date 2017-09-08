@@ -61,10 +61,14 @@ gulp.task('sass', function () {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src(folders.src + '/assets/scripts/**.js')
-      .pipe(concat('dist.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest(folders.dist));
+  try {
+    return gulp.src(folders.src + '/assets/scripts/**.js')
+        .pipe(concat('dist.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(folders.dist));
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 gulp.task('fonts', function () {
