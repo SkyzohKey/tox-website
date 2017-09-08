@@ -69,6 +69,14 @@ section#secure {
   @include flex-row();
 }
 
+section#learn-more, section#key-people, section#contributors {
+  @include global-padding(36px, 36px, 20%);
+
+  p {
+    line-height: 30px;
+  }
+}
+
 section {
   p {
     line-height: 26px;

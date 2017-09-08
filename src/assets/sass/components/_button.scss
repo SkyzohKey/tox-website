@@ -58,9 +58,9 @@
 
 .btn.primary {
   @include btnizer(
-    $color-primary,
-    white,
-    white,
+    $color-primary-light,
+    $color-light,
+    $color-light,
     $color-accent
   );
 

@@ -8,12 +8,12 @@
 #features-nav {
   @include global-padding(8px, 8px, 10%);
   @include flex-row();
-  @include links-color($color-dark, $color-primary);
+  @include links-color($color-light, $color-accent-light);
 
   height: 40px;
 
-  background-color: $color-gray;
-  border-bottom: 1px solid darken($color-gray, 10%);
+  background-color: $color-dark;
+  border-bottom: 1px solid darken($color-dark, 10%);
 
   a {
     @include spacing(28px);

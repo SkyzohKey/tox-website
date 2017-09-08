@@ -1,0 +1,60 @@
+/**
+ * Copyright (c) 2017 SkyzohKey
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.contributors-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contributor-widget {
+  @include flex-row();
+  @include spacing(24px);
+  @include transition();
+
+  flex-flow: row wrap;
+  flex: 0 0 calc(30% - 32px);
+
+  padding: 8px 16px;
+  border-radius: 6px;
+
+  .avatar {
+    @include size(46px);
+    border-radius: 46px;
+    margin-right: 16px;
+  }
+  .infos {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .username {
+      font-size: 18px;
+      font-family: 'Maven Pro';
+      font-weight: lighter;
+    }
+    .links {
+      a {
+        @include spacing(8px);
+        @include transition();
+
+        font-size: 10px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $color-accent-light;
+        }
+
+        .mdi {
+          margin-right: 4px;
+        }
+      }
+
+    }
+  }
+}
