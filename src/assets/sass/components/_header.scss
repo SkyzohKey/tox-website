@@ -72,3 +72,14 @@ header#site-header.fixed {
   position: fixed;
   top: 0; right: 0; left: 0;
 }
+
+header.page-title {
+  @include global-padding(16px);
+  @include background-gradient-primary();
+  @include headers-color($color-light);
+
+  justify-content: center;
+  text-align: center;
+
+  //min-height: 150px;
+}

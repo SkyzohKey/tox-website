@@ -12,6 +12,7 @@
     this._scrollSpy.init();
 
     this.header          = document.querySelector('#site-header') || null;
+    this.title           = document.querySelector('.page-title') || null;
     this.secondNav       = document.querySelector('nav.second-nav') || null;
     this.featureMessages = document.querySelector('#messages') || null;
     this.featureAudio    = document.querySelector('#audio-calls') || null;
@@ -55,13 +56,13 @@
         document.body.scrollTop;
 
       // Header.
-      if (this.header != null) {
+      if (this.header != null && this.secondNav == null) {
         if (e.data.id == this.header.id &&
             this.header.classList.contains('fixed') == false &&
             scrollTop >= this.header.offsetHeight
         ) {
           this.header.classList.add('fixed');
-          document.body.style.marginTop = this.header.offsetHeight * 2 + 'px'; // Perfect transition.
+          document.body.style.marginTop = this.header.offsetHeight + 'px'; // Perfect transition.
         }
       }
 
@@ -72,7 +73,7 @@
         ) {
           this.secondNav.classList.add('fixed');
           this.header.classList.remove('fixed');
-          document.body.style.marginTop = this.secondNav.offsetHeight * 2 + 'px'; // Perfect transition.
+          document.body.style.marginTop = this.secondNav.offsetHeight + 'px'; // Perfect transition.
         }
       }
     }.bind(this));
@@ -84,23 +85,24 @@
         document.body.scrollTop;
 
       // Header.
-      if (this.header != null) {
+      if (this.header != null && this.secondNav == null) {
         if (e.data.id == this.header.id &&
             this.header.classList.contains('fixed') == true &&
             scrollTop <= this.header.offsetHeight
         ) {
-          document.body.style.marginTop = '0';
           this.header.classList.remove('fixed');
+          document.body.style.marginTop = '0';
         }
       }
 
       if (this.secondNav != null) {
+        var floatOffset = this.secondNav.offsetHeight;
         if (e.data.id == this.secondNav.id &&
             this.secondNav.classList.contains('fixed') == true &&
-            scrollTop <= this.secondNav.offsetHeight
+            scrollTop <= floatOffset
         ) {
-          document.body.style.marginTop = '0';
           this.secondNav.classList.remove('fixed');
+          document.body.style.marginTop = '0';
           this.header.classList.remove('fixed');
         }
       }
