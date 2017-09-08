@@ -19,7 +19,7 @@ script:
 
 addons:
   browserstack:
-    username: SkyzohKey
+    username: skyzohkey3
     access_key:
       secure: "$BROWSERSTACK_ACCESS_KEY"
 
