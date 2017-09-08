@@ -16,7 +16,7 @@
   @include flex-row();
   @include spacing(8px);
 
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 3px;
   text-decoration: none;
   user-select: none;
@@ -63,8 +63,6 @@
     $color-light,
     $color-accent
   );
-
-  @include background-gradient-primary();
 }
 .btn.primary.border {
   @include btnizer(
