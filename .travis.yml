@@ -17,7 +17,7 @@ addons:
   browserstack:
     username: skyzohkey3
     access_key:
-      secure: "$BROWSERSTACK_ACCESS_KEY"
+      secure: "ojPrVSPNB40DwH1wVw6xkr5eUOAJapelD0mD65GFur+0b8bKzkbclQgLseVe73ysT6ykytc06pUDARenqNsb2zdi4R/ND1oYxPfHFmUEEXo5Baf+Iteo4JyrT2596uPvx8CJ/sTQGRgM29i8/ABjwHDKpni9YQrGJklIQeyiyjIkQCeC+5F0aQxyKeCTnVegWVQ1v8mJIykYIMXdxnE5jpVUYGvRXsLIYG2Oafky0a5xPCJkbjGWbD4s4oPyOAGHtH0rbOUKWCnoNnCXjztnMZfsdy+ny3oqbo99UBrB7dibvNgbEsSQzZO7HckaEbgZItWKC0fHv1+LFEbg7IVYxBLW0+54ZGBRXM3BTHbYEEkjf2BLjkXGwZv9j8MUpj0pEyAkipUJYo2QctJc2741NfVrs6oQoKN6TGUQ5b/BfmZ3LS3KqBKIDNOs3Ipwlh/3fzJfo7golBqxbcrYwzNqbEdRiJCFi4BX982byHSUcMqEDUHirJsH7uqTAC0ctjP/iyXahE2fpk7EhyiL6LcbHB7HbPRkCDCPf4DvtJG0NZKJj3B+ZrGs0Z7YShaY7P9LZVohx+GhdUGWXWI0s0Ck9spTM5i2//XVW7I0nMnTUwhx4j2X6Gbls5EywYHcJWJXLJhqJc4oKb0/UAvPa75C25WdnbEt24mdwuXRacxvMfQ="
 
 deploy:
   provider: pages
