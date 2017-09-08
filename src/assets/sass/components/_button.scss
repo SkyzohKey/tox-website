@@ -74,6 +74,24 @@
   );
 }
 
+.btn.purple {
+  @include btnizer(
+    $color-callout-main,
+    $color-light,
+    $color-light,
+    $color-callout-main
+  );
+}
+.btn.purple.border {
+  @include btnizer(
+    $color-light,
+    $color-callout-main,
+    $color-callout-main,
+    $color-light,
+    $color-callout-main
+  );
+}
+
 .btn.blue {
   @include btnizer(
     $color-fb,
