@@ -77,6 +77,23 @@ section#learn-more, section#key-people, section#contributors {
   }
 }
 
+section#error-404 {
+  @include flex-column();
+  @include global-padding();
+
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  h1, h3 {
+    text-align: center;
+    margin: 0 0 24px 0; 
+  }
+  h3 {
+    max-width: 450px;
+  }
+}
+
 section {
   p {
     line-height: 26px;
