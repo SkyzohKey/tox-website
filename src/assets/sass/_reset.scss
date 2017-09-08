@@ -31,7 +31,7 @@ body {
  * Set fonts for text & titles.
  */
 * {
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans' !important;
 }
 h1, h2, h3, h4 {
   font-family: 'Maven Pro';
@@ -456,4 +456,14 @@ template {
 
 [hidden] {
   display: none;
+}
+
+p,
+a,
+b,
+i,
+em,
+strong,
+span {
+  font-family: 'Noto Sans' !important;
 }
