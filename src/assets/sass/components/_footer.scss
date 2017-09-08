@@ -12,6 +12,7 @@
   @include flex-row();
 
   #tox-logo {
+    background: transparent url('./images/tox-logo@1x.png') no-repeat center left; // Old browsers.
     background: transparent url('./images/tox-logo.svg') no-repeat top center;
     width: 75px;
     height: 30px;

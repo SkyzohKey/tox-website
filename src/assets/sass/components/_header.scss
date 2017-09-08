@@ -16,6 +16,7 @@ header#site-header {
   z-index: 100;
 
   #tox-logo {
+    background: transparent url('./images/tox-logo@1x.png') no-repeat center left; // Old browsers.
     background: transparent url('./images/tox-logo.svg') no-repeat center left;
     width: 75px;
     height: 30px;
