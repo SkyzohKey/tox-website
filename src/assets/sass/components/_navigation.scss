@@ -5,12 +5,56 @@
  * https://opensource.org/licenses/MIT
  */
 
+#site-nav {
+  @include flex-row();
+
+  height: $header-height;
+  flex: 1;
+  justify-content: flex-end;
+  text-align: right;
+
+  a, div {
+    @include spacing($links-spacing);
+    @include transition();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-transform: normal;
+    font-size: 12px;
+    color: $color-light !important;
+  }
+
+  a.bold {
+    background-color: rgba($color-accent-hover, 1);
+  }
+
+  a:hover, a.active, .dropdown-handle:hover {
+    background-color: rgba(255,255,255,.1);
+  }
+
+  .dropdown {
+    display: none;
+  }
+  .dropdown-handle {
+    @include flex-row();
+    cursor: pointer;
+    color: $color-light;
+
+    img {
+      @include size(16px, 11px);
+      margin-right: 4px;
+    }
+  }
+}
+
 #features-nav {
   @include global-padding(8px, 8px, 10%);
   @include flex-row();
   @include links-color($color-light, $color-accent-light);
-
-  height: 40px;
 
   background-color: $color-dark;
   border-bottom: 1px solid darken($color-dark, 10%);
@@ -19,12 +63,17 @@
     @include spacing(28px);
     @include transition();
 
+    height: 24px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
+    font-size: 12px;
+
     span.material-icons {
       padding-right: 8px;
+      font-size: 12px;
     }
   }
   a.active {
