@@ -34,6 +34,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-replace-assets": "0.0.4",
     "gulp-sass": "^3.1.0",
+    "gulp-to-ico": "^1.0.0",
     "gulp-uglify": "^2.1.2",
     "minimist": "^1.2.0",
     "pump": "^1.0.2"

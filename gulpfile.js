@@ -17,13 +17,15 @@ const htmlmin   = require('gulp-htmlmin');
 const assetsVer = require('gulp-asset-version');
 const _if       = require('gulp-if');
 const minimist  = require('minimist');
-
-const DOMAIN = "https://skyzohkey.github.io/tox-website/";
+const ico       = require('gulp-to-ico');
 
 const folders = {
   src: './src',
   dist: './dist'
 };
+
+const DOMAIN = "https://skyzohkey.github.io/tox-website/";
+const FAVICON_PATH = folders.src + '/assets/images/tox-icon-colored.png';
 
 var knownOptions = {
   string: 'env',
@@ -71,8 +73,11 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('res', function () {
-  gulp.src(folders.src + '/favicon.ico').pipe(gulp.dest(folders.dist));
+  gulp.src(FAVICON_PATH)
+      .pipe(ico(folders.dist + '/favicon.ico'));
+  console.log('Generated favicon.ico');
   gulp.src(folders.src + '/.htaccess').pipe(gulp.dest(folders.dist));
+  gulp.src(folders.src + '/manifest.json').pipe(gulp.dest(folders.dist));
 });
 
 gulp.task('images', function () {
