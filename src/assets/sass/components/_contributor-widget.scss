@@ -21,11 +21,10 @@
   flex: 0 0 calc(30% - 32px);
 
   padding: 8px 16px;
-  border-radius: 6px;
 
   .avatar {
     @include size(46px);
-    border-radius: 46px;
+    //border-radius: 46px;
     margin-right: 16px;
   }
   .infos {
