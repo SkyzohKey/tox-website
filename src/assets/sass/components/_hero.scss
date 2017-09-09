@@ -127,6 +127,18 @@ section#technical-faq {
 section#basic-faq,
 section#technical-faq {
   @include global-padding(8px);
+
+  @include breakpoint(phablet) {
+    @include global-padding(8px, 8px, $phablet-global-padding);
+    
+    .text {
+      width: 100% !important;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+  }
 }
 
 section#error-404 {

@@ -17,7 +17,7 @@ header#site-header {
 
   @include breakpoint(phablet) {
     @include global-padding(0, 0, $phablet-menu-padding);
-    
+
     height: inherit;
     min-height: $header-height;
   }
@@ -69,6 +69,10 @@ header.no-bg {
   @include global-padding(8px);
 
   background: none;
+
+  @include breakpoint(phablet) {
+    @include global-padding(8px, 8px, $phablet-global-padding);
+  }
 }
 header.color-primary h1 {
   text-align: left;

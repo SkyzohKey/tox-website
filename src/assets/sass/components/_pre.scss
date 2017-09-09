@@ -9,4 +9,8 @@ pre {
   background-color: $color-gray;
   padding: 8px 12px;
   border-radius: 6px;
+  word-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+  overflow-x: scroll;
 }
