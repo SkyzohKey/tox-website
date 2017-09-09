@@ -184,7 +184,7 @@
     @media (min-width: 64em) { @content ; }
   }
   @else if $point == tablet {
-    @media (min-width: 50em) { @content ; }
+    @media (max-width: 769px) { @content ; }
   }
   @else if $point == phablet {
     @media (max-width: 361px)  { @content ; }
