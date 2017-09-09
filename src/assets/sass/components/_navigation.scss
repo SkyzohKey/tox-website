@@ -57,22 +57,27 @@
 
 #mobile-menu-display { display: none; }
 #mobile-menu-display:checked ~ #site-nav {
-      @include background-gradient-primary();
-      display: flex;
-      flex-flow: row wrap;
-      height: inherit;
+  @include background-gradient-primary();
+  @include shadow-2();
 
-      position: absolute;
-      top: $header-height;
-      left: 0; right: 0;
-      padding: 16px;
-      
-      a {
-        display: flex;
-        flex: 0 0 35%;
-        padding: 8px 16px;
-      }
-    }
+  display: flex;
+  flex-flow: row wrap;
+  height: inherit;
+
+  position: absolute;
+  top: $header-height;
+  left: 0; right: 0;
+  padding: 16px;
+  
+  max-height: fit-content;
+  z-index: 9999999;
+
+  a {
+    display: flex;
+    flex: 0 0 35%;
+    padding: 8px 16px;
+  }
+}
 
 #features-nav {
   @include global-padding(8px, 8px, 10%);

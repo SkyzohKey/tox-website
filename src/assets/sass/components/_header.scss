@@ -20,6 +20,7 @@ header#site-header {
 
     height: inherit;
     min-height: $header-height;
+    max-height: $header-height;
   }
 
   #tox-logo {
