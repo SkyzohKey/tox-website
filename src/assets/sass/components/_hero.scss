@@ -69,6 +69,7 @@ section#introduction, section {
 
   @include breakpoint(tablet) {
     @include global-padding(24px, 24px, $phablet-hero-padding);
+    @include flex-column();
   }
 
   .sharer {
@@ -102,6 +103,7 @@ section#secure {
 
   @include breakpoint(tablet) {
     @include global-padding(24px, 24px, $phablet-hero-padding);
+    @include flex-column();
   }
 }
 
