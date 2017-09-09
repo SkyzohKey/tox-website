@@ -17,6 +17,9 @@ header#site-header {
 
   @include breakpoint(phablet) {
     @include global-padding(0, 0, $phablet-menu-padding);
+    
+    height: inherit;
+    min-height: $header-height;
   }
 
   #tox-logo {
@@ -30,7 +33,17 @@ header#site-header {
     text-indent: -9999px;
 
     @include breakpoint(phablet) {
-      background-position-x: center;
+      background-position-x: left;
+      flex: 1;
+    }
+  }
+
+  #mobile-menu-trigger {
+    color: $color-light;
+    display: none;
+
+    @include breakpoint(phablet) {
+      display: flex;
     }
   }
 
