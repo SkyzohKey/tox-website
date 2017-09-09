@@ -22,7 +22,7 @@
 
   padding: 8px 16px;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     flex: 0 0 100%;
   }
 

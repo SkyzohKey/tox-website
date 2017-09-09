@@ -11,7 +11,7 @@ section#site-hero {
   @include background-dark();
   @include flex-row();
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include flex-column();
     @include global-padding(24px, 24px, $phablet-hero-padding);
 
@@ -40,7 +40,7 @@ section#site-hero {
   pointer-events: none;
   overflow: hidden;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     height: inherit !important;
     margin: 0 !important;
     box-shadow: none !important;
@@ -53,7 +53,7 @@ section#site-hero {
 .screenshot.right {
   margin-left: 24px;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     margin-top: 16px !important;
   }
 }
@@ -67,7 +67,7 @@ section#introduction, section {
   @include background-light();
   @include flex-row();
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(24px, 24px, $phablet-hero-padding);
   }
 
@@ -75,7 +75,7 @@ section#introduction, section {
     margin-right: 24px;
     color: $color-primary;
 
-    @include breakpoint(phablet) {
+    @include breakpoint(tablet) {
       width: 100%;
       margin: 0 0 16px 0;
     }
@@ -100,7 +100,7 @@ section#secure {
   @include background-light();
   @include flex-row();
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(24px, 24px, $phablet-hero-padding);
   }
 }
@@ -112,7 +112,7 @@ section#basic-faq,
 section#technical-faq {
   @include global-padding(24px, 24px);
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(24px, 24px, $phablet-global-padding);
 
     h1 {
@@ -128,7 +128,7 @@ section#basic-faq,
 section#technical-faq {
   @include global-padding(8px);
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(8px, 8px, $phablet-global-padding);
     
     .text {

@@ -13,7 +13,7 @@
   justify-content: flex-end;
   text-align: right;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     display: none;
   }
 
@@ -87,7 +87,7 @@
   background-color: $color-dark;
   border-bottom: 1px solid darken($color-dark, 10%);
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     display: none;
   }
 

@@ -15,7 +15,7 @@ header#site-header {
   height: $header-height;
   z-index: 100;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(0, 0, $phablet-menu-padding);
 
     height: inherit;
@@ -35,7 +35,7 @@ header#site-header {
 
     text-indent: -9999px;
 
-    @include breakpoint(phablet) {
+    @include breakpoint(tablet) {
       background-position-x: center;
     }
   }
@@ -44,7 +44,7 @@ header#site-header {
     color: $color-light;
     display: none;
 
-    @include breakpoint(phablet) {
+    @include breakpoint(tablet) {
       display: flex;
     }
   }
@@ -72,7 +72,7 @@ header.no-bg {
 
   background: none;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(8px, 8px, $phablet-global-padding);
   }
 }

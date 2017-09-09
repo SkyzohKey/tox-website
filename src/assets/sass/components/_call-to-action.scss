@@ -13,7 +13,7 @@ nav#cta {
 
   background-color: $color-darker;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(8px, 8px, $phablet-global-padding);
     
     height: inherit;
@@ -32,7 +32,7 @@ nav#tox-features {
 
   min-height: $features-height;
 
-  @include breakpoint(phablet) {
+  @include breakpoint(tablet) {
     @include global-padding(8px, 8px, $phablet-global-padding);
 
     min-height: inherit;
@@ -41,7 +41,7 @@ nav#tox-features {
   .icon-text {
     @include spacing(16px);
 
-    @include breakpoint(phablet) {
+    @include breakpoint(tablet) {
       width: calc(45% - 32px);
       text-align: center;
     }
