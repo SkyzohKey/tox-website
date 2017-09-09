@@ -37,13 +37,21 @@ $shadow-y: 2px;
 $shadow-blur: 6px;
 
 // Paddings, margins.
-$global-padding: 20%;
+$global-padding: 15%;
 $global-margin: $global-padding;
 
-$menu-padding: 20%;
+$menu-padding: 15%;
 $hero-padding: $menu-padding;
+$section-image-padding: 5%;
 
 $container-padding-default: 0;
 $container-margin-default: 0;
 
 $links-spacing: 16px;
+
+// Responsive phablet variables.
+$phablet-global-padding: 16px;
+$phablet-global-margin: 16px;
+$phablet-menu-padding: 16px;
+$phablet-hero-padding: 16px;
+$phablet-section-image-padding: 16px;

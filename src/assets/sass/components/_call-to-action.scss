@@ -12,18 +12,39 @@ nav#cta {
   height: $callToAction-height;
 
   background-color: $color-darker;
+
+  @include breakpoint(phablet) {
+    @include global-padding(8px, 8px, $phablet-global-padding);
+    
+    height: inherit;
+
+    .btn.purple {
+      font-size: 12px;
+    }
+  }
 }
 
 nav#tox-features {
-  @include global-padding(0, 0, 10%);
+  @include global-padding(8px);
   @include flex-row();
   @include background-gradient-primary();
   @include links-color($color-light);
 
-  height: $features-height;
+  min-height: $features-height;
+
+  @include breakpoint(phablet) {
+    @include global-padding(8px, 8px, $phablet-global-padding);
+
+    min-height: inherit;
+  }
 
   .icon-text {
     @include spacing(16px);
+
+    @include breakpoint(phablet) {
+      width: calc(45% - 32px);
+      text-align: center;
+    }
   }
 }
 

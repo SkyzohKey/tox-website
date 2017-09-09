@@ -15,14 +15,23 @@ header#site-header {
   height: $header-height;
   z-index: 100;
 
+  @include breakpoint(phablet) {
+    @include global-padding(0, 0, $phablet-menu-padding);
+  }
+
   #tox-logo {
     background: transparent url('./images/tox-logo@1x.png') no-repeat center left; // Old browsers.
     background: transparent url('./images/tox-logo.svg') no-repeat center left;
+
     width: 75px;
     height: 30px;
     padding: 15px;
 
     text-indent: -9999px;
+
+    @include breakpoint(phablet) {
+      background-position-x: center;
+    }
   }
 
   // See _navigation.scss for the navbar.

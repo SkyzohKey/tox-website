@@ -10,6 +10,15 @@ section#site-hero {
   @include links-color($color-light);
   @include background-dark();
   @include flex-row();
+
+  @include breakpoint(phablet) {
+    @include flex-column();
+    @include global-padding(24px, 24px, $phablet-hero-padding);
+
+    h1 {
+      text-align: center;
+    }
+  }
 }
 
 #tox-icon {
@@ -20,13 +29,23 @@ section#site-hero {
 }
 
 .screenshot {
-  @include size(560px, 350px);
   @include shadow-2();
+  width: 560px;
+  max-height: 350px;
+  height: 350px;
+  min-height: 200px;
 
   border-radius: 6px;
   user-select: none;
   pointer-events: none;
   overflow: hidden;
+
+  @include breakpoint(phablet) {
+    height: inherit !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: 2px solid $color-gray !important;
+  }
 }
 .screenshot.left {
   margin-right: 24px;
@@ -39,14 +58,23 @@ section#site-hero {
 }
 
 section#introduction, section {
-  @include global-padding(36px, 36px, 5%);
+  @include global-padding(36px, 36px, $section-image-padding);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
 
+  @include breakpoint(phablet) {
+    @include global-padding(24px, 24px, $phablet-hero-padding);
+  }
+
   .sharer {
     margin-right: 24px;
     color: $color-primary;
+
+    @include breakpoint(phablet) {
+      width: 100%;
+      margin: 0 0 16px 0;
+    }
   }
 }
 section.primary-theme {
@@ -63,10 +91,14 @@ section.primary-gradient-theme {
 }
 
 section#secure {
-  @include global-padding(36px, 36px, 5%);
+  @include global-padding(36px, 36px, $section-image-padding);
   @include links-color($color-primary);
   @include background-light();
   @include flex-row();
+
+  @include breakpoint(phablet) {
+    @include global-padding(24px, 24px, $phablet-hero-padding);
+  }
 }
 
 section#learn-more,
@@ -74,7 +106,7 @@ section#key-people,
 section#contributors,
 section#basic-faq,
 section#technical-faq {
-  @include global-padding(24px, 24px, 20%);
+  @include global-padding(24px, 24px);
 
   p {
     line-height: 30px;

@@ -175,3 +175,21 @@
   background: linear-gradient(45deg, $color-dark, $color-darker);
   color: $color-light;
 }
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (min-width: 64em) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 50em) { @content ; }
+  }
+  @else if $point == phablet {
+    @media (max-width: 361px)  { @content ; }
+  }
+  @else if $point == mobileonly {
+    @media (max-width: 37.5em)  { @content ; }
+  }
+}
