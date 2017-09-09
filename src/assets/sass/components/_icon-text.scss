@@ -49,9 +49,18 @@
     color: $color-accent;
     border-radius: 36px;
     border: 1px dashed $color-accent;
+
+    @include breakpoint(phablet) {
+      flex: 0 0 36px;
+    }
   }
 
   span {
     max-width: 50%;
+
+    @include breakpoint(phablet) {
+      flex: 1;
+      max-width: inherit;
+    }
   }
 }

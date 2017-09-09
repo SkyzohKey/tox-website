@@ -52,6 +52,10 @@ section#site-hero {
 }
 .screenshot.right {
   margin-left: 24px;
+
+  @include breakpoint(phablet) {
+    margin-top: 16px !important;
+  }
 }
 .text {
   flex: 1;
@@ -107,6 +111,14 @@ section#contributors,
 section#basic-faq,
 section#technical-faq {
   @include global-padding(24px, 24px);
+
+  @include breakpoint(phablet) {
+    @include global-padding(24px, 24px, $phablet-global-padding);
+
+    h1 {
+      font-size: 1.2em;
+    }
+  }
 
   p {
     line-height: 30px;
