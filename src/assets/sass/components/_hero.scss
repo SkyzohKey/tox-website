@@ -91,6 +91,14 @@ section.dark-theme {
 }
 section.light-theme {
   @include background-light();
+
+  @include breakpoint(tablet) {
+    flex-flow: column-reverse nowrap;
+
+    .screenshot {
+      margin-top: 16px !important;
+    }
+  }
 }
 section.primary-gradient-theme {
   @include background-gradient-primary();

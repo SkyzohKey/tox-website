@@ -43,7 +43,10 @@ nav#tox-features {
 
     @include breakpoint(tablet) {
       width: calc(45% - 32px);
+      max-width: calc(45% - 32px);
+      min-width: calc(45% - 32px);
       text-align: center;
+      margin: 0;
     }
   }
 }
