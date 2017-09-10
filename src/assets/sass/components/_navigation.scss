@@ -88,14 +88,18 @@
   border-bottom: 1px solid darken($color-dark, 10%);
 
   @include breakpoint(tablet) {
-    //display: none;
+    @include global-padding(8px, 8px, 16px);
+    
+    display: flex;
+    justify-content: space-between;
   }
 
   a {
     @include spacing(28px);
     @include transition();
 
-    height: 24px;
+    min-height: 24px;
+    min-width: 24px;
 
     display: flex;
     justify-content: center;
@@ -103,7 +107,21 @@
 
     font-size: 12px;
 
+    @include breakpoint(tablet) {
+      margin: 0 !important;
+
+      span {
+        display: none;
+      }
+      span.material-icons, span.mdi {
+        display: flex;
+        font-size: 20px !important;
+        margin: 0 !important;
+      }
+    }
+
     span.material-icons {
+      @include spacing(0px);
       padding-right: 8px;
       font-size: 12px;
     }
