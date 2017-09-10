@@ -14,21 +14,9 @@
   
   z-index: 9999;
   
-  .mdi-plus-box {
+  .mdi {
     display: block;
     margin-right: 8px;
-  }
-  .mdi-minus-box {
-    display: none;
-    margin-right: 8px;
-  }
-}
-.collapse-title.active {
-  .mdi-minus-box {
-    display: block;
-  }
-  .mdi-plus-box {
-    display: none;
   }
 }
 .collapse-title:hover,
