@@ -1,0 +1,124 @@
+.card {
+  @include transition();
+  @include shadow-1();
+
+  background-color: white;
+  color: rgba(0,0,0,.87);
+
+  margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+  }
+}
+.card.with-padding {
+  padding: 16px 24px;
+}
+
+.hover.card:hover {
+  @include shadow-2();
+}
+
+.card-header {
+  @include flex-row();
+  justify-content: flex-start;
+
+  padding: 16px 24px;
+
+  h1 {
+    margin: 8px 0;
+    font-size: 22px;
+    color: rgba(0,0,0,.54)
+  }
+
+  &.no-padding {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+}
+.card-header .text-container {
+  align-items: center;
+  margin: 0 16px;
+
+  h4 { margin: 0; }
+}
+.card-content {
+  @include transition();
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: 0 24px;
+
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+
+  h1 {
+    font-size: 24px;
+    margin: 8px 0;
+    color: rgba(0,0,0,.87);
+  }
+  p:first-of-type {
+    margin: 0;
+  }
+}
+a.card-content:hover {
+  color: rgba(0,0,0,.87);
+}
+
+.card-footer {
+  display: flex;
+  flex-flow: row nowrap;
+
+  padding: 16px 24px;
+
+  .left {
+    flex: 1;
+    justify-content: flex-start;
+
+    .btn {
+      @include spacing(16px);
+    }
+  }
+  .right {
+    flex: 1;
+    justify-content: flex-end;
+
+    .btn {
+      @include spacing(8px);
+    }
+  }
+
+  .btn {
+    @include transition();
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 24px;
+    padding: 0;
+
+    i {
+      @include transition();
+      margin-right: 8px;
+      color: rgba(0,0,0,.54);
+    }
+    span {
+      @include transition();
+      color: rgba(0,0,0,.87);
+    }
+  }
+
+  a.btn:hover {
+    i, span {
+      color: $color-primary;
+    }
+  }
+}

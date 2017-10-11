@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2017 SkyzohKey
- * 
+ *
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT
  */
@@ -13,5 +13,39 @@ ul {
       color: $color-dark;
       margin: 2px 0;
     }
+  }
+}
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-bottom: 8px !important;
+}
+.list a {
+  @include transition();
+
+  flex: 1;
+  height: 36px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 0 24px;
+
+  color: rgba(0,0,0,.54);
+  text-decoration: none;
+
+  .mdi, .material-icons {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+    color: rgba(0,0,0,.87);
+  }
+  &:active {
+    background-color: #dbdbdb;
   }
 }

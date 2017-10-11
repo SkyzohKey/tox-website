@@ -1,0 +1,37 @@
+.chip-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  margin: -8px 0 0 -8px;
+}
+.chip {
+  @include transition();
+  @include spacing(8px);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  box-sizing: border-box;
+
+  height: 28px;
+  margin: 8px 0 0 8px;
+  padding: 0 12px;
+
+  background-color: #ebebeb;
+  border-radius: 24px;
+  color: rgba(0,0,0,.87);
+  font-size: 11px;
+  text-decoration: none;
+  //text-transform: uppercase;
+
+  &:hover {
+    @include shadow-1();
+  }
+  &:active {
+    @include shadow-1();
+    background-color: #dbdbdb;
+  }
+}

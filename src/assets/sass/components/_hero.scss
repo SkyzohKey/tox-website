@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2017 skyzohkey
- * 
+ *
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT
  */
@@ -116,6 +116,20 @@ section#secure {
   }
 }
 
+div#blog-posts {
+  flex: 1;
+}
+#sidebar {
+  align-self: flex-start;
+  margin-left: 24px;
+  flex: 0 0 30%;
+
+  @include breakpoint(tablet) {
+    margin: 24px 0 0 0;
+  }
+}
+
+section#blog-wrapper,
 section#learn-more,
 section#key-people,
 section#contributors,
@@ -141,7 +155,7 @@ section#technical-faq {
 
   @include breakpoint(tablet) {
     @include global-padding(8px, 8px, $phablet-global-padding);
-    
+
     .text {
       width: 100% !important;
     }
@@ -162,7 +176,7 @@ section#error-404 {
 
   h1, h3 {
     text-align: center;
-    margin: 0 0 24px 0; 
+    margin: 0 0 24px 0;
   }
   h3 {
     max-width: 450px;
