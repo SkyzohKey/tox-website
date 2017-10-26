@@ -42,3 +42,7 @@ This project is under the [MIT License], so feel free to contribute or fork.
 
 [MIT License]: License
 [BrowserStack]: https://www.browserstack.com/
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/SkyzohKey/tox-website/badge.svg?style=beer-square)](https://beerpay.io/SkyzohKey/tox-website)  [![Beerpay](https://beerpay.io/SkyzohKey/tox-website/make-wish.svg?style=flat-square)](https://beerpay.io/SkyzohKey/tox-website?focus=wish)
